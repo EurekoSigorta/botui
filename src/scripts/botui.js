@@ -387,7 +387,8 @@
         return _showActions(_opts);
       },
       removeAll: function () {
-        _instance.action.button.buttons.splice(0, _instance.action.button.buttons.length);
+        // _instance.action.button.buttons.splice(0, _instance.action.button.buttons.length);
+        _instance.action.button = {};
         return Promise.resolve();
       }
     };
