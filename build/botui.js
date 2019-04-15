@@ -1,9 +1,9 @@
 /*
- * botui 0.3.6
+ * botui 0.3.7
  * A JS library to build the UI for your bot
  * https://botui.org
  *
- * Copyright 2018, Moin Uddin
+ * Copyright 2019, Moin Uddin
  * Released under the MIT license.
 */
 
@@ -394,6 +394,10 @@
         _instance.action.button.buttons = _opts.actionButton;
         _instance.action.text = _opts.actionText;
         return _showActions(_opts);
+      },
+      removeAll: function () {
+        _instance.action.button.buttons.splice(0, _instance.action.button.buttons.length);
+        return Promise.resolve();
       }
     };
 
