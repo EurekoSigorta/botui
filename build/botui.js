@@ -397,7 +397,7 @@
       },
       removeAll: function () {
         // _instance.action.button.buttons.splice(0, _instance.action.button.buttons.length);
-        _instance.action.button({action: [], show: true})
+        _instance.action.button = { action: [], show: true }
 
         return Promise.resolve();
       }
